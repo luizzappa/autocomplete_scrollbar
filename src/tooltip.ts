@@ -260,7 +260,8 @@ export function completionTooltip(stateField: StateField<CompletionState>) {
 }
 
 function scrollIntoView(container: HTMLElement, element: HTMLElement) {
-  let parent = container.getBoundingClientRect()
+  const modContainer = container.closest(".simplebar-content-wrapper") ?? container
+  let parent = modContainer.getBoundingClientRect()
   let self = element.getBoundingClientRect()
   if (self.top < parent.top) container.scrollTop -= parent.top - self.top
   else if (self.bottom > parent.bottom) container.scrollTop += self.bottom - parent.bottom

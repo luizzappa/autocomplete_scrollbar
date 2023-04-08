@@ -1,6 +1,6 @@
 {
   "name": "@luizzappa/autocomplete_mod",
-  "version": "6.4.3",
+  "version": "6.4.4",
   "description": "Autocompletion for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
